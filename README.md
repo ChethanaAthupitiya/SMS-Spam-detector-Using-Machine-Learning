@@ -22,45 +22,42 @@ requirements.txt – The Python libraries required to run the project.
 Prerequisites
 To run this project, ensure that you have the following installed:
 
-Python 3.x
+
 Required libraries:
 pandas
 scikit-learn
 requests
 zipfile
+
 You can install the required libraries by running:
 
 bash
-Copy code
+
 pip install -r requirements.txt
 Instructions to Run the Project
+
 Step 1: Clone the Repository
 To get a copy of the project up and running on your local machine:
-
-bash
-Copy code
 git clone https://github.com/your_username/sms-spam-detection.git
-cd sms-spam-detection
+cd SMS_Spam-Prediction
+
 Step 2: Download and Load the Dataset
 The script automatically downloads and loads the dataset from the UCI Machine Learning Repository. You do not need to manually download the dataset.
 
 Step 3: Run the Script
 To train the model and test its accuracy, simply run the Python script:
 
-bash
-Copy code
-python sms_spam_detection.py
+python SMS_Spam_Prediction.
+
 Step 4: Predict if a New Message is Spam or Not
 After training, the script will prompt you to enter a new message. Type any SMS message to check if it is spam or not, for example:
 
-bash
-Copy code
+
 Enter a message to check if it's spam or not: "Congratulations! You've won a free iPhone. Click here to claim!"
 The model will output whether the message is classified as "Spam" or "Not Spam".
 
 Example Output
-vbnet
-Copy code
+
 Accuracy: 0.98
               precision    recall  f1-score   support
 
@@ -76,14 +73,22 @@ The message is: Spam
 Model Performance
 The performance of the model is evaluated using accuracy, precision, recall, and F1-score. The Naive Bayes classifier performs well on the SMS Spam Collection dataset with an accuracy of 98%.
 
+![1](https://github.com/user-attachments/assets/493103c4-6ad4-4948-b6e9-f3150c24604a)
+![2](https://github.com/user-attachments/assets/50ffdcc6-6e67-4608-a0cf-47842ee900e2)
+![3](https://github.com/user-attachments/assets/0cd9ee95-5c11-492d-bfce-72c5c7f37773)
+![4](https://github.com/user-attachments/assets/1083fbc9-6848-4032-90e4-b2519ee0377e)
+
+
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 References
 Dataset: Almeida, T. & Hidalgo, J. (2011). SMS Spam Collection [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5CC84.
 Naive Bayes Algorithm: More details about Naive Bayes can be found in the scikit-learn documentation.
+
 Files in the repository:
 sms_spam_detection.py: The Python script containing the machine learning code.
 requirements.txt: Lists all the necessary dependencies.
+
 README.md: This README file with instructions and information about the project.
 LICENSE: A license file (optional, but recommended).
